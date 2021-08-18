@@ -4,7 +4,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: mysql-pv-claim-iber
   labels:
-    app: wordpress
+    app: demoibermatica
 spec:
   accessModes:
     - ReadWriteOnce
