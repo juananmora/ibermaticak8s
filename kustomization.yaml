@@ -1,0 +1,5 @@
+resources:
+  - mysql-deployment.yaml
+  - mysql-service.yaml
+  - web-deployment.yaml
+  - web-service.yaml
