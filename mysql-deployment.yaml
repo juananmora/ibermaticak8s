@@ -24,9 +24,15 @@ spec:
         name: mysqlcompose
         ports:
         - containerPort: 3306
+        volumeMounts:
+        - name: mysql-persistent-storage-iber
+          mountPath: /var/lib/mysql
         resources: {}
       hostname: mysql
       restartPolicy: Always
       serviceAccountName: ""
-      volumes: null
+      volumes:
+      - name: mysql-persistent-storage-iber
+        persistentVolumeClaim:
+          claimName: mysql-pv-claim-iber
 status: {}
