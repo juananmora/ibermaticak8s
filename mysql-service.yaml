@@ -9,15 +9,8 @@ spec:
   - name: "tcp-pre"
     port: 3306
     targetPort: 3306
-  volumeMounts:
-        - name: mysql-persistent-storage-iber
-          mountPath: /var/lib/mysql
   selector:
     io.kompose.service: mysql
   type: LoadBalancer
-  volumes:
-      - name: mysql-persistent-storage-iber
-        persistentVolumeClaim:
-          claimName: mysql-pv-claim-iber
 status:
   loadBalancer: {}
