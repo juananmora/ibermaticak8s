@@ -18,6 +18,6 @@ spec:
   volumes:
       - name: mysql-persistent-storage-iber
         persistentVolumeClaim:
-          claimName: mysql-pv-claim
+          claimName: mysql-pv-claim-iber
 status:
   loadBalancer: {}
