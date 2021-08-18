@@ -19,7 +19,7 @@ spec:
       - env:
         - name: MYSQL_ROOT_PASSWORD
           value: bmcAdm1n
-        image: juananmora/mysqlibermatica:latest
+        image: juananmora/mysql
         imagePullPolicy: ""
         name: mysqlcompose
         ports:
