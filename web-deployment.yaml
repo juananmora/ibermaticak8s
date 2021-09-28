@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - env:
-        image: juananmora/ibermaticak8s:16
+        image: juananmora/ibermaticak8s:22
         imagePullPolicy: ""
         name: tomcatcompose
         ports:

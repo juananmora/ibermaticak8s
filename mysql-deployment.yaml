@@ -19,7 +19,7 @@ metadata:
     io.kompose.service: mysql
   name: mysql
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       io.kompose.service: mysql
