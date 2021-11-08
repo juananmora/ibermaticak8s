@@ -7,7 +7,7 @@ metadata:
 spec:
   ports:
   - name: "http-pre"
-    port: 8091
+    port: 8092
     targetPort: 8080
   selector:
     io.kompose.service: web
